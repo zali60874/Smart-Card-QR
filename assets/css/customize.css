@@ -1,0 +1,250 @@
+:root {
+    --color-light: #E9F6FF;
+    --color-navy: #000b45;
+    --color-blue: #3652AD;
+    --color-blue-light: #cfdaff;
+    --color-orange: #FE7A36;
+    /* --color-grey: #f4f4f4; */
+    --color-dark-grey: #a9a9a9;
+
+    --color-lightest-grey: #f7f7f7;
+    --color-light-grey: #e0e0e0;
+    --color-grey: #bdbdbd;
+    --color-darkest-grey: #424242;
+
+    --font-Inter: 'Inter', sans-serif;
+    --font-size-10: 10px;
+    --font-size-11: 11px;
+    --font-size-12: 12px;
+    --font-size-13: 13px;
+    --font-size-14: 14px;
+    --font-size-15: 15px;
+    --font-size-16: 16px;
+    --font-size-17: 17px;
+    --font-size-18: 18px;
+    --font-size-19: 19px;
+    --font-size-20: 20px;
+    --font-size-25: 25px;
+    --font-size-30: 30px;
+    --font-size-40: 40px;
+    --font-size-45: 45px;
+}
+
+.editor-nav {
+    background-color: var(--color-navy);
+    padding: 10px 5px 10px 5px;
+    color: var(--color-light);
+}
+.editor-nav .list .btn {
+    color: var(--color-light);
+}
+.editor-nav .list .btn:hover {
+    color: var(--color-orange);
+}
+.editor-nav .list .btn i {
+    font-size: var(--font-size-18);
+}
+.qr-design-layout {
+    height: 94.5vh;
+}
+.sidebar {
+    padding: 0;
+    height: -webkit-fill-available;
+}
+.sidebar-body {
+    background-color: var(--color-lightest-grey);
+    height: -webkit-fill-available;
+}
+.sidebar .sidebar-body .nav {
+    width: 20%;
+    margin-right: 0 !important;
+    height: -webkit-fill-available;
+}
+.sidebar .sidebar-body .nav .nav-link {
+    width: 100%;
+    /* height: 80px; */
+    height: auto;
+    border-radius: 0;
+    color: var(--color-darkest-grey);
+    background-color: var(--color-light-grey);
+}
+.sidebar .sidebar-body .nav .nav-link.active {
+    background-color: var(--color-lightest-grey);
+    color: var(--color-navy);
+}
+.sidebar .sidebar-body .nav .nav-link i {
+    font-size: var(--font-size-25);
+}
+.sidebar .sidebar-body .tab-content {
+    width: 80%;
+}
+.sidebar .sidebar-body .tab-content .tab-pane {
+    padding: 10px;
+}
+.sidebar .sidebar-body .tab-content .tab-pane .tab-heading {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.sidebar .sidebar-body .tab-content .tab-pane .tab-heading h5 {
+    color: var(--color-navy);
+}
+.sidebar .sidebar-body .tab-content .tab-pane .tab-heading p {
+    font-size: var(--font-size-12);
+}
+.sidebar .sidebar-body .tab-content .tab-pane .dot-option .btn {
+    font-size: var(--font-size-12);
+    margin-bottom: 7px;
+    background-color: var(--color-light-grey);
+}
+.sidebar .sidebar-body .tab-content label {
+    font-size: var(--font-size-12);
+    font-weight: 600;
+}
+.sidebar .sidebar-body .tab-content .tab-pane .dot-option input[type="radio"]:checked + .btn {
+    border: 1px solid var(--color-blue);
+    background-color: var(--color-blue);
+    color: var(--color-light);
+}
+
+.design-preview {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.design-preview .business-card {
+    height: 350px;
+    width: 600px;
+}
+.design-preview .business-card .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Radio  Buttons */
+.radio-inputs {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid var(--color-light-grey);
+    border-radius: 0.5rem;
+    background-color: #EEE;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 300px;
+    font-size: 14px;
+  }
+  
+  .radio-inputs .radio {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  
+  .radio-inputs .radio input {
+    display: none;
+  }
+  
+  .radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+  }
+  
+  .radio-inputs .radio input:checked + .name {
+    background-color: var(--color-blue);
+    font-weight: 600;
+    color: var(--color-light);
+  }
+
+
+
+
+
+
+
+/*--------------------------------- Responsive Media Quaries -----------------------------*/
+@media only screen and (min-width: 1600px) and (max-width: 1900px) {
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}
+
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+.editor-nav .list {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px) {
+    .editor-nav .list {
+        text-align: center;
+    }
+    .editor-nav .list .left {
+        text-align: center;
+        display: flex;
+    }
+    .qr-design-layout {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .sidebar-body {
+        flex-direction: column-reverse;
+    }
+    .sidebar .sidebar-body .tab-content .tab-pane .tab-heading h5 {
+        font-size: var(--font-size-15);
+    }
+    .sidebar .sidebar-body .tab-content .tab-pane .tab-heading p {
+        font-size: var(--font-size-11);
+    }
+    .sidebar .sidebar-body .nav .nav-link {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+    .sidebar .sidebar-body .nav {
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    .sidebar .sidebar-body .tab-content {
+        width: 100%;
+        padding: 10px 0 20px 0;
+    }
+    .sidebar .sidebar-body .tab-content label {
+        font-size: var(--font-size-12);
+        font-weight: 600;
+    }
+    /* .sidebar .sidebar-body .tab-content .sizing input{
+        padding: 1px;
+    }
+    .sidebar .sidebar-body .tab-content .sizing .input-group-text {
+        padding: 1px;
+    } */
+    .design-preview {
+        margin: 30px 0 30px 0;
+    }
+}
+
+/* Small Device = 320px */
+@media only screen and (max-width: 479px) {
+}

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card</title>
+  <link rel="shortcut icon" href="assets/images/general/favicon.png" type="image/x-icon">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  <!-- Bootstrap 5.3.2 -->
+  <link rel="stylesheet" href="assets/lib/bootstrap//dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/lib/line-awesome/css/line-awesome.min.css">
+  <link rel="stylesheet" href="assets/lib/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <!-- QR Lib -->
+  <script src="assets/lib/qr-code-styling/qr.js"></script> 
+
+  <!-- CSS file -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/customize.css">
+  <link rel="stylesheet" href="assets/css/card.css">
+</head>
+
+<body>
+
+
+  <div class="wrapper">
+    <main>
+
+      <div class="header d-none">
+
+        <div class="container-xl">
+
+          <header>
+            <div class="col-md-3 mb-md-0 d-flex justify-content-evenly align-items-center">
+              <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <img src="https://getbootstrap.com/docs/5.3/assets/img/webpack.svg" width="40" height="32" alt="">
+              </a>
+            </div>
+            <ul class="nav col-12 col-md-auto  justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link active px-2">Home</a></li>
+              <li><a href="#" class="nav-link px-2">Features</a></li>
+              <li><a href="#" class="nav-link px-2">Pricing</a></li>
+              <li><a href="#" class="nav-link px-2">About</a></li>
+            </ul>
+            <div class="col-md-3 text-end">
+              <a href="" class="btn desktop-btn btn-sm btn-light">Login</a>
+              <button class="sidebar-toggle" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                <i class="las la-bars"></i>
+              </button>
+            </div>
+          </header>
+
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <a href="/" class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                <img src="https://getbootstrap.com/docs/5.3/assets/img/webpack.svg" width="40" height="32" alt=""> Smart
+                Card
+              </a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Home</li>
+                <li class="list-group-item">Features</li>
+                <li class="list-group-item">Pricing</li>
+                <li class="list-group-item">About</li>
+              </ul>
+              <div class="offcanvas-footer">
+                <span class="">Wasdev Solanki</span>
+                <a href="" class="btn btn-sm btn-light">Login</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container-fluid">
+
+        <!-- Editor header bar -->
+        <section class="row editor-nav d-flex justify-content-center align-items-center">
+          <div class="col-md-12 list">
+            <div class="left">
+              <a href="#" class="btn btn-sm style-none"><i class="las la-reply"></i> Undo</a>
+              <a href="#" class="btn btn-sm style-none"><i class="las la-share"></i> Redo</a>
+              <a href="#" class="btn btn-sm style-none"><i class="las la-cloud-download-alt"></i> Save</a>
+            </div>
+            <div class="right">
+              <a href="#" class="btn btn-sm style-none"><i class="las la-shopping-cart"></i> Order</a>
+            </div>
+          </div>
+        </section>
+          
+        <section class="row card-section">
+
+          <div class="col-md-4 sidebar border d-flex align-items-start">
+
+            <div class="nav border nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="las la-expand"></i></button>
+              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="las la-cloud-upload-alt"></i></button>
+              <button class="nav-link active" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="lab la-firstdraft"></i></button>
+              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="lab la-flipboard"></i></button>
+            </div>
+
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+
+                  <!-- --------------------------- Back Side Styling -------------------------- -->
+                  <div class="tab-heading backStyling d-none">
+                    <h5>Back Side Styling</h5>
+                  </div>
+                  <div class="container pr-5 px-5 backStyling d-none">
+                    <div class="row position-code ">
+                      <div class="col-4"><button class="btn border style-none" id="topLeft"><i class="las la-caret-up" style="transform: rotate(314deg);"></i></button></div>
+                      <div class="col-4"><button class="btn border style-none" id="middleTop"><i class="las la-caret-up"></i></button></div>
+                      <div class="col-4"><button class="btn border style-none" id="rightTop"><i class="las la-caret-up" style="transform: rotate(45deg);"></i></button></div>
+                      <div class="col-4"><button class="btn border style-none" id="leftMiddle"><i class="las la-caret-left"></i></button></div>
+                      <div class="col-4"><button class="btn border style-none" id="Center"><i class="las la-expand-arrows-alt"></i></button></div>
+                      <div class="col-4"><button class="btn border style-none" id="rightMiddle"><i class="las la-caret-right"></i></button></div>
+                      <div class="col-4"><button class="btn border style-none" id="leftBottom"><i class="las la-caret-up" style="transform: rotate(230deg);"></i></button></div>
+                      <div class="col-4"><button class="btn border style-none" id="bottomCenter"><i class="las la-caret-down"></i></button></div>
+                      <div class="col-4"><button class="btn border style-none" id="rightBottom"><i class="las la-caret-up" style="transform: rotate(135deg);"></i></button></div>
+                    </div>
+                  </div>
+                  <div class="row p-2 mt-2 backStyling d-none">
+                    <div class="col-md-12 text-end">
+                      <textarea name="text" id="Text" class="form-control mb-2 AddCardText" placeholder="Write text on card"></textarea>
+                      <button class="btn btn-sm bg-dark text-light style-none mb-4" id="AddText"><i class="las la-plus"></i> Add Text</button>
+                    </div>
+                    <div class="col-md-5 mb-3">
+                      <div class="input-group mb-3">
+                        <label class="input-group-text" for="fontFamily"> <i class="las la-font"></i></label>
+                        <select class="form-select" id="fontFamily">
+                          <option value="Arial" style="font-family:Arial;">Arial</option>
+                          <option value="Helvetica" style="font-family: Helvetica;">Helvetica</option>
+                          <option value="Times New Roman" style="font-family: Times New Roman;">Times New Roman</option>
+                          <option value="Courier New" style="font-family: Courier New;">Courier New</option>
+                          <option value="Verdana" style="font-family: Verdana;">Verdana</option>
+                          <option value="Georgia" style="font-family: Georgia;">Georgia</option>
+                          <option value="Delicious" style="font-family: Delicious;">Delicious</option>
+                          <option value="Comic Sans MS" style="font-family: Comic Sans MS;">Comic Sans MS</option>
+                          <option value="Impact" style="font-family: Impact;">Impact</option>
+                          <option value="Trebuchet MS" style="font-family: Trebuchet MS;">Trebuchet MS</option>
+                          <option value="Monaco" style="font-family: Monaco;">Monaco</option>
+                          <option value="Lucida Sans Unicode" style="font-family: 'Lucida Sans Unicode';">Lucida Sans Unicode</option>
+                          <option value="Tahoma" style="font-family: Tahoma;">Tahoma</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <select class="form-select" id="fontSize">
+                        <option value="8px">8px</option>                          
+                        <option value="10px">10px</option>                          
+                        <option value="12px">12px</option>                          
+                        <option value="14px">14px</option>                          
+                        <option value="16px">16px</option>                          
+                        <option value="18px">18px</option>                          
+                        <option value="20px">20px</option>                          
+                        <option value="22px">22px</option>                          
+                        <option value="24px">24px</option>                          
+                        <option value="26px">26px</option>                          
+                        <option value="28px">28px</option>                          
+                        <option value="30px">30px</option>
+                      </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <input type="checkbox" class="btn-check" id="boldText" autocomplete="off">
+                      <label class="btn border style-none" for="boldText">B</label>
+                    </div>
+                    <div class="col-md-4">
+                      <label class="form-label fw-semibold" for="textColor">Text Color</label>
+                      <input type="color" class="form-control form-control-color" id="textColor" value="#563d7c" title="Choose your color">
+                    </div>
+                    <div class="col-md-8">
+                      <label for="" class="form-label fw-semibold">Rotate Text</label>
+                      <input type="range" class="form-range RotateText"  min="0" max="260">
+                    </div>
+                  </div>
+
+                  <!-- ------------------------- Front Side Styling ------------------------- -->
+                  <div class="tab-heading frontStyling">
+                    <h5>Front Side Options</h5>
+                  </div>
+
+                  <div class="row frontStyling">
+
+                    <div class="col-md-12">
+                      <label for="LogoImg" class="form-label fw-semibold mb-1">Logo Image</label>
+                      <input type="file" class="form-control form-control-sm putImage2 mb-2" id="LogoImg" accept="image/png, image/jpeg, image/jpg" multiple>
+                    </div>
+                  
+                    <div class="col-md-12 text-center p-2 mb-2">
+                      <div id="imagePreviewContainer">
+                        <!-- append uploaded images -->
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                      <input type="number" min="0" class="form-control form-control-sm" id="FrontLogoWidth" placeholder="Width">
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                      <input type="number" min="0" class="form-control form-control-sm" id="FrontLogoHeight" placeholder="Height">
+                    </div>
+
+                    <div class="col-md-12 text-end">
+                      <textarea name="text" id="Text" class="form-control mb-2 AddCardTextFront" placeholder="Write text on card"></textarea>
+                      <button class="btn btn-sm bg-dark text-light style-none mb-4" id="AddTextFront"><i class="las la-plus"></i> Add Text</button>
+                    </div>
+
+                    <div class="col-md-5 mb-3">
+                      <div class="input-group mb-3">
+                        <label class="input-group-text" for="fontFamilyFront"> <i class="las la-font"></i></label>
+                        <select class="form-select" id="fontFamilyFront">
+                          <option value="Arial" style="font-family:Arial;">Arial</option>
+                          <option value="Helvetica" style="font-family: Helvetica;">Helvetica</option>
+                          <option value="Times New Roman" style="font-family: Times New Roman;">Times New Roman</option>
+                          <option value="Courier New" style="font-family: Courier New;">Courier New</option>
+                          <option value="Verdana" style="font-family: Verdana;">Verdana</option>
+                          <option value="Georgia" style="font-family: Georgia;">Georgia</option>
+                          <option value="Delicious" style="font-family: Delicious;">Delicious</option>
+                          <option value="Comic Sans MS" style="font-family: Comic Sans MS;">Comic Sans MS</option>
+                          <option value="Impact" style="font-family: Impact;">Impact</option>
+                          <option value="Trebuchet MS" style="font-family: Trebuchet MS;">Trebuchet MS</option>
+                          <option value="Monaco" style="font-family: Monaco;">Monaco</option>
+                          <option value="Lucida Sans Unicode" style="font-family: 'Lucida Sans Unicode';">Lucida Sans Unicode</option>
+                          <option value="Tahoma" style="font-family: Tahoma;">Tahoma</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                      <select class="form-select" id="fontSizeFront">
+                        <option value="8px">8px</option>                          
+                        <option value="10px">10px</option>                          
+                        <option value="12px">12px</option>                          
+                        <option value="14px">14px</option>                          
+                        <option value="16px">16px</option>                          
+                        <option value="18px">18px</option>                          
+                        <option value="20px">20px</option>                          
+                        <option value="22px">22px</option>                          
+                        <option value="24px">24px</option>                          
+                        <option value="26px">26px</option>                          
+                        <option value="28px">28px</option>                          
+                        <option value="30px">30px</option>
+                      </select>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                      <input type="checkbox" class="btn-check" id="boldTextFront" autocomplete="off">
+                      <label class="btn border style-none" for="boldTextFront">B</label>
+                    </div>
+
+                    <div class="col-md-4">
+                      <label class="form-label fw-semibold" for="textColorFront">Text Color</label>
+                      <input type="color" class="form-control form-control-color" id="textColorFront" value="#563d7c" title="Choose your color">
+                    </div>
+
+                  </div>
+
+              </div>
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                <div class="tab-heading">
+                  <h5>background Image</h5>
+                </div>
+
+                <div class="row d-flex justify-content-center align-items-center">
+
+                  <div class="col-md-11">
+                    <label for="FrontBackground" class="form-label fw-semibold mb-1">Background Image</label>
+                    <input type="file" class="form-control form-control-sm putImage1 mb-2" id="FrontBackground">
+                 
+                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+                      <input type="radio" class="btn-check" name="bgImg" id="frontBgImg" autocomplete="off" checked>
+                      <label class="btn style-none btn-outline-dark" for="frontBgImg">Front</label>
+                    
+                      <input type="radio" class="btn-check" name="bgImg" id="backBgImg" autocomplete="off">
+                      <label class="btn style-none btn-outline-dark" for="backBgImg">Back</label>
+                    
+                      <input type="radio" class="btn-check" name="bgImg" id="allBgImg" autocomplete="off">
+                      <label class="btn style-none btn-outline-dark" for="allBgImg">All</label>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-12 text-center p-3 mb-4">
+                    <small class="text-muted uploadText">Uploaded Image</small>
+                    <img src="" id="target1" />
+                  </div>
+
+                  <div class="col-md-5 mb-3">
+                    <label class="form-label mb-1" for="frontBgColorCustom">Custom color</label>
+                    <input type="color" class="form-control form-control-color" id="frontBgColorCustom" value="#563d7c" title="Choose your color">
+                  </div>
+
+                  <div class="col-md-5 mb-3">
+                    <label class="form-label mb-1">Card Side</label>
+                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+                      <input type="radio" class="btn-check" name="bgColor" id="frontBgColor" autocomplete="off" checked>
+                      <label class="btn style-none btn-outline-dark" for="frontBgColor">Front</label>
+                    
+                      <input type="radio" class="btn-check" name="bgColor" id="backBgColor" autocomplete="off">
+                      <label class="btn style-none btn-outline-dark" for="backBgColor">Back</label>
+                    
+                      <input type="radio" class="btn-check" name="bgColor" id="allBgColor" autocomplete="off">
+                      <label class="btn style-none btn-outline-dark" for="allBgColor">All</label>
+                    </div>  
+                  </div>
+
+                  <div class="col-md-12 color-list">                   
+                    <span class="color-item light-green" data="#90EE90"></span>
+                    <span class="color-item light-gray" data="#D3D3D3"></span>
+                    <span class="color-item silver" data="#C0C0C0"></span>
+                    <span class="color-item light-cyan" data="#FFB6C1"></span>
+                    <span class="color-item lavender" data="#E6E6FA"></span>
+                    <span class="color-item light-pink" data="#FFB6C1"></span>
+                    <span class="color-item light-yellow" data="#FFFFE0"></span>
+                    <span class="color-item light-blue" data="#ADD8E6"></span>
+                    <span class="color-item light-coral" data="#F08080"></span>
+                    <span class="color-item light-goldenrod-yellow" data="#FAFAD2"></span>
+                    <span class="color-item light-sea-green" data="#20B2AA"></span>
+                    <span class="color-item light-salmon" data="#FFA07A"></span>
+                    <span class="color-item light-sky-blue" data="#87CEEB"></span>
+                    <span class="color-item light-slate-gray" data="#778899"></span>
+                    <span class="color-item light-steel-blue" data="#B0C4DE"></span>
+                    <span class="color-item light-turquoise" data="#AFEEEE"></span>
+                    <span class="color-item light-orchid" data="#DA70D6"></span>
+                    <span class="color-item light-violet" data="#EE82EE"></span>
+                    <span class="color-item light-olive-green" data="#BDB76B"></span>
+                    <span class="color-item light-maroon" data="#B03060"></span>
+                    <span class="color-item light-slate-blue" data="#8470FF"></span>
+                    <span class="color-item light-salmon-pink" data="#FF91A4"></span>
+                    <span class="color-item light-khaki" data="#F0E68C"></span>
+                    <span class="color-item light-beige" data="#F5F5DC"></span>
+                    <span class="color-item light-brown" data="#CD853F"></span>
+                    <span class="color-item light-magenta" data="#FF00FF"></span>
+                    <span class="color-item light-indigo" data="#4B0082"></span>
+                    <span class="color-item light-turquoise-blue" data="#AFE4DE"></span>
+                    <span class="color-item light-tan" data="#D2B48C"></span>
+                    <span class="color-item light-apricot" data="#FDD5B1"></span>
+                  </div>
+
+                </div>
+
+
+              </div>
+              <div class="tab-pane fade show active" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                <div class="tab-heading">
+                  <h5>Template</h5>
+                </div>
+
+                <div class="row template">
+                  <div class="col-md-12 template-list">
+                    <img class="hoverImg" frontImg="assets/images/template/front.png" backImg="assets/images/template/back.png" alt="">
+                    <img class="hoverImg" frontImg="assets/images/template/front.png" backImg="assets/images/template/back.png" alt="">
+                    <img class="hoverImg" frontImg="assets/images/template/front.png" backImg="assets/images/template/back.png" alt="">
+                    <img class="hoverImg" frontImg="assets/images/template/front.png" backImg="assets/images/template/back.png" alt="">
+                    <img class="hoverImg" frontImg="assets/images/template/front.png" backImg="assets/images/template/back.png" alt="">
+                  </div>
+                </div>
+
+              </div>
+              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+                <div class="tab-heading">
+                  <h5>Features</h5>
+                  <p>This is Styling section for different sizes of components.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-8 card-side-section">
+
+            <div class="radio-inputs">
+              <label class="radio">
+                <input type="radio" name="card_side" class="CardSide" id="front" checked="">
+                <span class="name">Front</span>
+              </label>
+              <label class="radio">
+                <input type="radio" name="card_side" class="CardSide" id="back">
+                <span class="name">Back</span>
+              </label>
+            </div>
+
+            <div class="card-side">
+
+              <div class="card FrontSide">
+                <div class="card-body row frontBg CodeRowFront overflow-hidden" style="background-image: url('assets/images/general/card.jpg')"></div>
+              </div>
+
+              <div class="card d-none BackSide">
+                <div class="card-body row backBg CodeRow overflow-hidden" style="background-image: url('assets/images/general/card.jpg')">
+
+                  <div class="col-4 "></div>
+                  <div class="col-4 "></div>
+                  <div class="col-4 "></div>
+                  <div class="col-4 "></div>
+                  <div class="col-4 active  d-flex justify-content-center align-items-center">
+                    <img src="assets/images/general/card.png" id="CardCode" alt="">
+                  </div>
+                  <div class="col-4 "></div>
+                  <div class="col-4 "></div>
+                  <div class="col-4 "></div>
+                  <div class="col-4 "></div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+        </section>
+
+        <!-- footer -->
+        <footer class="row d-none">
+
+          <div class="col-md-4">
+            <div class="company-title d-flex justify-content-center text-align-center">
+              <img src="https://getbootstrap.com/docs/5.3/assets/img/webpack.svg" width="40" height="32" alt="">
+              <h3>Virtual Card</h3>
+            </div>
+            <p class="company-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Quibusdam molestias doloremque natus! Quasi aut enim nisi
+              in voluptates delectus eaque accusantium. Nulla commodi dolorum
+              facere cupiditate, maxime nemo necessitatibus totam.
+            </p>
+          </div>
+
+          <div class="col-md-3">
+            <div class="page-link">
+              <a href="#home" class="">Home</a>
+              <a href="#home" class="">Features</a>
+              <a href="#home" class="">Pricing</a>
+              <a href="#home" class="">About us</a>
+              <a href="#home" class="">Contact</a>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="social-link">
+              <a href=""><i class="lab la-facebook-f"></i></a>
+              <a href=""><i class="lab la-twitter"></i></a>
+              <a href=""><i class="las la-paper-plane"></i></a>
+              <a href=""><i class="lab la-instagram"></i></a>
+            </div>
+
+          </div>
+
+
+        </footer>
+        <!-- footer -->
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Bootstrap 5.3.2 -->
+  <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="assets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- JS file -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/card.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design</title>
+  <link rel="shortcut icon" href="assets/images/general/favicon.png" type="image/x-icon">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- Bootstrap 5.3.2 -->
+  <link rel="stylesheet" href="assets/lib/bootstrap//dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/lib/line-awesome/css/line-awesome.min.css">
+  <link rel="stylesheet" href="assets/lib/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+
+  <!-- QR Lib -->
+  <!-- <script type="text/javascript" src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script> -->
+  <script src="assets/lib/qr-code-styling/qr.js"></script>
+
+  <!-- CSS file -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/customize.css">
+
+
+</head>
+
+<body>
+
+
+  <div class="wrapper">
+    <main>
+
+      <div class="header d-none">
+
+        <div class="container-xl">
+
+          <header>
+            <div class="col-md-3 mb-md-0 d-flex justify-content-evenly align-items-center">
+              <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <img src="https://getbootstrap.com/docs/5.3/assets/img/webpack.svg" width="40" height="32" alt="">
+              </a>
+            </div>
+            <ul class="nav col-12 col-md-auto  justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link active px-2">Home</a></li>
+              <li><a href="#" class="nav-link px-2">Features</a></li>
+              <li><a href="#" class="nav-link px-2">Pricing</a></li>
+              <li><a href="#" class="nav-link px-2">About</a></li>
+            </ul>
+            <div class="col-md-3 text-end">
+              <a href="" class="btn desktop-btn btn-sm btn-light">Login</a>
+              <button class="sidebar-toggle" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                <i class="las la-bars"></i>
+              </button>
+            </div>
+          </header>
+
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <a href="/" class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                <img src="https://getbootstrap.com/docs/5.3/assets/img/webpack.svg" width="40" height="32" alt=""> Smart
+                Card
+              </a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Home</li>
+                <li class="list-group-item">Features</li>
+                <li class="list-group-item">Pricing</li>
+                <li class="list-group-item">About</li>
+              </ul>
+              <div class="offcanvas-footer">
+                <span class="">Wasdev Solanki</span>
+                <a href="" class="btn btn-sm btn-light">Login</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container-fluid">
+
+        <!-- Editor header bar -->
+        <section class="row editor-nav d-flex justify-content-center align-items-center">
+          <div class="col-md-12 list">
+            <div class="left">
+              <a href="#" class="btn btn-sm style-none"><i class="las la-reply"></i> Undo</a>
+              <a href="#" class="btn btn-sm style-none"><i class="las la-share"></i> Redo</a>
+              <a href="#" class="btn btn-sm style-none"><i class="las la-cloud-download-alt"></i> Save</a>
+            </div>
+            <div class="right">
+              <a href="#" class="btn btn-sm style-none"><i class="las la-shopping-cart"></i> Order</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Company section -->
+        <section class="row qr-design-layout d-flex justify-content-center">
+          <div class="col-md-4 border sidebar">
+            <div class="sidebar-body d-flex align-items-start">
+
+              <div class="nav flex-row nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
+
+                <button class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+                        type="button" 
+                        role="tab" 
+                        aria-controls="v-pills-home" 
+                        aria-selected="true">
+                        <i class="las la-expand"></i>
+                </button>
+
+                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-profile" 
+                        type="button" 
+                        role="tab" 
+                        aria-controls="v-pills-profile"
+                        aria-selected="false">
+                        <i class="las la-cloud-upload-alt"></i>
+                </button>
+
+                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-messages" 
+                        type="button" 
+                        role="tab" 
+                        aria-controls="v-pills-messages"
+                        aria-selected="false">
+                        <i class="las la-dot-circle"></i>
+                </button>
+
+                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-settings" 
+                        type="button" 
+                        role="tab" 
+                        aria-controls="v-pills-settings"
+                        aria-selected="false">
+                        <i class="lab la-firstdraft"></i>
+                </button>
+
+                <button class="nav-link active" id="v-pills-two-tab" data-bs-toggle="pill" data-bs-target="#v-pills-two"
+                        type="button" 
+                        role="tab" 
+                        aria-controls="v-pills-two" 
+                        aria-selected="false">
+                        <i class="lab la-flipboard"></i>
+                </button>
+
+                <button class="nav-link" id="v-pills-one-tab" data-bs-toggle="pill" data-bs-target="#v-pills-one"
+                        type="button" 
+                        role="tab" 
+                        aria-controls="v-pills-one" 
+                        aria-selected="false">
+                        <i class="las la-fill-drip"></i>
+                </button>
+
+                <button class="nav-link" id="v-pills-three-tab" data-bs-toggle="pill" data-bs-target="#v-pills-three"
+                        type="button" 
+                        role="tab" 
+                        aria-controls="v-pills-three" 
+                        aria-selected="false">
+                        <i class="lab la-dribbble"></i>
+                </button>
+
+                <button class="nav-link" id="v-pills-four-tab" data-bs-toggle="pill" data-bs-target="#v-pills-four"
+                        type="button" 
+                        role="tab" 
+                        aria-controls="v-pills-four" 
+                        aria-selected="false">
+                        <i class="lab la-gitlab"></i>
+                </button>
+              </div>
+
+              <div class="tab-content" id="v-pills-tabContent">
+
+                <div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
+                  tabindex="0">
+                  <div class="tab-heading">
+                    <h5>Sizing</h5>
+                    <p>This is Styling section for different sizes of components.</p>
+                  </div>
+                  <div class="sizing">
+                    <div class="row">
+
+                      <div class="col-md-12">
+                        <label for="inputMargin" class="form-label">Margin</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text"><i class="las la-arrows-alt-v"></i></span>
+                          <input type="number" class="form-control" id="inputMargin" aria-label="Margin"
+                            aria-describedby="Margin" value="0">
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
+                  tabindex="0">
+
+                  <div class="tab-heading">
+                    <h5>Center Image</h5>
+                    <p>This is Styling section for different sizes of components.</p>
+                  </div>
+
+                  <div class="upload-image">
+                    <div class="row">
+
+                      <div class="col-md-12">
+                        <label for="inputMargin" class="form-label">Upload Image</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text"><i class="las la-image"></i></span>
+                          <input type="file" class="form-control putImage2" id="inputMargin" aria-label="Margin"
+                            aria-describedby="Margin" value="0">
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 text-center mb-3">
+                        <small class="text-muted uploadText">Uploaded Image</small>
+                        <img src="" id="target2" />
+                      </div>
+
+                      <div class="col-md-12">
+                        <label for="inputImageSize" class="form-label">Image Size</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text"><i class="las la-images"></i></span>
+                          <input type="number" class="form-control" id="inputImageSize" aria-label="ImageSize"
+                            aria-describedby="ImageSize" value="0" step="0.1" min="0" max="1">
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <label for="inputImageMargin" class="form-label">Image Margin</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text"><i class="las la-compress-arrows-alt"></i></span>
+                          <input type="number" class="form-control" id="inputImageMargin" aria-label="ImageMargin"
+                            aria-describedby="ImageMargin" value="0">
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="ImageBackground" checked>
+                          <label class="form-check-label" for="ImageBackground">
+                            Hide Background Dots
+                          </label>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                  <div class="tab-heading">
+                    <h5>QR Pattern</h5>
+                    <p>This is Styling section for different sizes of components.</p>
+                  </div>
+                  <div class="dot-option">
+                    <div class="row">
+
+                      <div class="col-md-12">
+                        <div class="radio-inputs w-100">
+                          <label class="radio">
+                            <input type="radio" name="patten" class="Pattern" id="rounded" checked="">
+                            <span class="name">Rounded</span>
+                          </label>
+
+                          <label class="radio">
+                            <input type="radio" name="patten" class="Pattern" id="square">
+                            <span class="name">Square</span>
+                          </label>
+                        
+                          <label class="radio">
+                            <input type="radio" name="patten" class="Pattern" id="dots">
+                            <span class="name">Dots</span>
+                          </label>
+
+                          <label class="radio">
+                            <input type="radio" name="patten" class="Pattern" id="classy">
+                            <span class="name">Classy</span>
+                          </label>
+                        
+                          <label class="radio">
+                            <input type="radio" name="patten" class="Pattern" id="extra-rounded">
+                            <span class="name">Extra Rounded</span>
+                          </label>
+                        
+                          <label class="radio">
+                            <input type="radio" name="patten" class="Pattern" id="classy-rounded">
+                            <span class="name">Classy Rounded</span>
+                          </label>
+                        </div>
+                      </div>
+                      
+
+                      <div class="col-md-12 mt-4 mb-2 text-center p-3">
+                        <h6>Select Color Tone</h6>
+
+                        
+                        <!-- <div class="">
+                          <input type="radio" class="btn-check dotColor" name="color-tone" id="single"
+                            autocomplete="off" checked>
+                          <label class="btn btn-sm rounded-pill style-none" for="single">Single Color</label>
+
+                          <input type="radio" class="btn-check dotColor" name="color-tone" id="gradient"
+                            autocomplete="off">
+                          <label class="btn btn-sm rounded-pill style-none" for="gradient">Gradient</label>
+                        </div> -->
+
+                        <div class="radio-inputs w-100 mt-4">
+                          <label class="radio">
+                            <input type="radio" name="patternTone" class="PatternTone" id="single" checked="">
+                            <span class="name">Single Tone</span>
+                          </label>
+                          <label class="radio">
+                            <input type="radio" name="patternTone" class="PatternTone" id="gradient">
+                            <span class="name">Gradient Tone</span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 d-none PatternSection">
+                        <div class="form-check">
+                          <input class="form-check-input dotColorStyle" type="radio" name="color-style" data="linear" id="dotColorStyleLinear" checked>
+                          <label class="form-check-label" for="dotColorStyleLinear">
+                            Linear Style
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input dotColorStyle" type="radio" name="color-style" data="radial" id="dotColorStyleRadial">
+                          <label class="form-check-label" for="dotColorStyleRadial">
+                            Radial Style
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 PatternSection d-flex d-none p-3">
+                        <input type="color" class="form-control form-control-color" id="GradientColor1" value="#6a1a4c">
+                        <input type="color" class="form-control form-control-color mx-2" id="GradientColor2"
+                          value="#FE7A36">
+                        <div class="input-group mb-3">
+                          <span class="input-group-text"><i class="las la-redo-alt"></i></span>
+                          <input type="number" class="form-control" id="GradientRotation" aria-label="GradientRotation"
+                            aria-describedby="GradientRotation" value="0" min="0" max="360">
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 SingleColor">
+                        <input type="color" class="form-control form-control-color" id="DotColor" value="#000b45">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                  aria-labelledby="v-pills-settings-tab" tabindex="0">
+
+                  <div class="tab-heading">
+                    <h5>Corner Square Style</h5>
+                    <p>This is Styling section for different sizes of components.</p>
+                  </div>
+
+                  <div class="corner-square-dot">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="radio-inputs w-100">
+                          <label class="radio">
+                            <input type="radio" name="CornerSquare" class="CornerSquare" id="none" checked="">
+                            <span class="name">None</span>
+                          </label>
+
+                          <label class="radio">
+                            <input type="radio" name="CornerSquare" class="CornerSquare" id="square">
+                            <span class="name">Square</span>
+                          </label>
+                              
+                          <label class="radio">
+                            <input type="radio" name="CornerSquare" class="CornerSquare" id="dots">
+                            <span class="name">Dots</span>
+                          </label>
+                              
+                          <label class="radio">
+                            <input type="radio" name="CornerSquare" class="CornerSquare" id="extra-rounded">
+                            <span class="name">Extra Rounded</span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 mt-4 mb-2 text-center p-3">
+                        <h6>Select Color Tone</h6>
+
+                        <div class="radio-inputs w-100 mt-4">
+                          <label class="radio">
+                            <input type="radio" name="CornerColorTone" class="CornerColorTone" id="single" checked="">
+                            <span class="name">Single Tone</span>
+                          </label>
+                          <label class="radio">
+                            <input type="radio" name="CornerColorTone" class="CornerColorTone" id="gradient">
+                            <span class="name">Gradient Tone</span>
+                          </label>
+                        </div>
+
+                      </div>
+
+                      <div class="col-md-12 CornerSingleColor">
+                        <input type="color" class="form-control form-control-color" id="CornerSingleColor" value="#000b45">
+                      </div>
+
+                      <div class="col-md-12 d-none CornerGradientColor">
+                        <div class="form-check">
+                          <input class="form-check-input CornerGradient" type="radio" name="color-style" id="CornerGradientLinear" data="linear" checked>
+                          <label class="form-check-label" for="CornerGradientLinear">
+                            Linear Style
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input CornerGradient" type="radio" name="color-style" id="CornerGradientRadial" data="radial">
+                          <label class="form-check-label" for="CornerGradientRadial">
+                            Radial Style
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 CornerGradientColor d-flex d-none p-3">
+                        <input type="color" class="form-control form-control-color" id="CornerGradient1" value="#6a1a4c">
+                        <input type="color" class="form-control form-control-color mx-2" id="CornerGradient2" value="#FE7A36">
+                        <div class="input-group mb-3">
+                          <span class="input-group-text"><i class="las la-redo-alt"></i></span>
+                          <input type="number" class="form-control" id="CornerGradientRotation" aria-label="CornerGradientRotation"
+                            aria-describedby="CornerGradientRotation" value="0" min="0" max="360">
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="tab-pane fade show active" id="v-pills-two" role="tabpanel" aria-labelledby="v-pills-two-tab" tabindex="0">
+                  
+                  <div class="tab-heading mt-4">
+                    <h5>Corner Square Center Style</h5>
+                    <p>This is Styling section for different sizes of components.</p>
+                  </div>
+
+                  <div class="corner-square-center-dot">
+                    <div class="row">
+
+                      <div class="col-md-12">
+                        <div class="radio-inputs w-100">
+
+                          <label class="radio">
+                            <input type="radio" name="CornerCenterDot" class="CornerCenterDot" id="none" checked="">
+                            <span class="name">None</span>
+                          </label>
+
+                          <label class="radio">
+                            <input type="radio" name="CornerCenterDot" class="CornerCenterDot" id="square">
+                            <span class="name">Square</span>
+                          </label>
+                              
+                          <label class="radio">
+                            <input type="radio" name="CornerCenterDot" class="CornerCenterDot" id="dots">
+                            <span class="name">Dots</span>
+                          </label>
+                              
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 mt-4 mb-2 text-center p-3">
+                        <h6>Select Color Tone</h6>
+
+                        <div class="radio-inputs w-100 mt-4">
+                          <label class="radio">
+                            <input type="radio" name="CornerCenterDotTone" class="CornerCenterDotTone" id="single" checked="">
+                            <span class="name">Single Tone</span>
+                          </label>
+                          <label class="radio">
+                            <input type="radio" name="CornerCenterDotTone" class="CornerCenterDotTone" id="gradient">
+                            <span class="name">Gradient Tone</span>
+                          </label>
+                        </div>
+
+                      </div>
+                      
+                      <div class="col-md-12 CornerCenterSingleTone">
+                        <label for="">Choose Color</label>
+                        <input type="color" class="form-control form-control-color" id="CornerCenterSingleColor" value="#000b45">
+                      </div>
+
+                      <div class="col-md-12 d-none CornerCenterGradientTone">
+                        <div class="form-check">
+                          <input class="form-check-input CornerCenterGradient" type="radio" id="CornerCenterGradientToneLinear" name="color-corner-center-style" data="linear"
+                            checked>
+                          <label class="form-check-label" for="CornerCenterGradientToneLinear">
+                            Linear Style
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input CornerCenterGradient" type="radio" id="CornerCenterGradientToneRadial" name="color-corner-center-style" data="radial">
+                          <label class="form-check-label" for="CornerCenterGradientToneRadial">
+                            Radial Style
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 CornerCenterGradientTone d-flex d-none p-3">
+                        <input type="color" class="form-control form-control-color" id="CornerCenterGradient1" value="#6a1a4c">
+                        <input type="color" class="form-control form-control-color mx-2" id="CornerCenterGradient2" value="#FE7A36">
+                        <div class="input-group mb-3">
+                          <span class="input-group-text"><i class="las la-redo-alt"></i></span>
+                          <input type="number" class="form-control" id="CornerCenterGradientRotation" aria-label="CornerCenterGradientRotation"
+                            aria-describedby="CornerCenterGradientRotation" value="0" min="0" max="360">
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-one" role="tabpanel" aria-labelledby="v-pills-one-tab" tabindex="0">
+                  <div class="tab-heading">
+                    <h5>QR Background Style</h5>
+                    <p>This is Styling section for different sizes of components.</p>
+                  </div>
+
+                  <div class="qr-background">
+                    <div class="row">
+
+                      <div class="col-md-12 mt-2 mb-2 text-center p-3">
+                        <h6>Select Color Tone</h6>
+
+                        <div class="radio-inputs w-100 mt-4">
+                          <label class="radio">
+                            <input type="radio" name="BackgroundColor" class="BackgroundColor" id="single" checked="">
+                            <span class="name">Single Tone</span>
+                          </label>
+                          <label class="radio">
+                            <input type="radio" name="BackgroundColor" class="BackgroundColor" id="gradient">
+                            <span class="name">Gradient Tone</span>
+                          </label>
+                        </div>
+
+                      </div>
+
+                      <div class="col-md-12 BackgroundSingleSection">
+                        <label for="BackgroundSingleColor mb-3">Choose Color</label>
+                        <input type="color" class="form-control form-control-color" id="BackgroundSingleColor" value="#000b45">
+                      </div>
+
+                      <div class="col-md-12 d-none QRbg-section">
+                        <div class="form-check">
+                          <input class="form-check-input QrbgGradientStyle" type="radio" name="color-bg-style" id="linear"
+                            checked>
+                          <label class="form-check-label" for="linear">
+                            Linear Style
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input QrbgGradientStyle" type="radio" name="color-bg-style" id="radial">
+                          <label class="form-check-label" for="radial">
+                            Radial Style
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 BackgroundGradientSection d-flex d-none p-3">
+                        <input type="color" class="form-control form-control-color" id="BgGradient1" value="#6a1a4c">
+                        <input type="color" class="form-control form-control-color mx-2" id="BgGradient2" value="#FE7A36">
+                        <div class="input-group mb-3">
+                          <span class="input-group-text"><i class="las la-redo-alt"></i></span>
+                          <input type="number" class="form-control" id="BgGradientRotation" aria-label="BgGradientRotation"
+                            aria-describedby="BgGradientRotation" value="0" min="0" max="360">
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-three" role="tabpanel" aria-labelledby="v-pills-three-tab"
+                  tabindex="0">
+                  3333333333333333333
+                </div>
+                <div class="tab-pane fade" id="v-pills-four" role="tabpanel" aria-labelledby="v-pills-four-tab"
+                  tabindex="0">
+                  4444444444444444444
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-8 design-preview">
+            <!-- width="252px" height="144px" -->
+            <div class="card business-card">
+              <div class="card-body" style="background-image: url('assets/images/general/card.jpg')">
+                <div id="canvas"></div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <!-- Company Section -->
+
+        <!-- footer -->
+        <footer class="row d-none">
+
+          <div class="col-md-4">
+            <div class="company-title d-flex justify-content-center text-align-center">
+              <img src="https://getbootstrap.com/docs/5.3/assets/img/webpack.svg" width="40" height="32" alt="">
+              <h3>Virtual Card</h3>
+            </div>
+            <p class="company-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Quibusdam molestias doloremque natus! Quasi aut enim nisi
+              in voluptates delectus eaque accusantium. Nulla commodi dolorum
+              facere cupiditate, maxime nemo necessitatibus totam.
+            </p>
+          </div>
+
+          <div class="col-md-3">
+            <div class="page-link">
+              <a href="#home" class="">Home</a>
+              <a href="#home" class="">Features</a>
+              <a href="#home" class="">Pricing</a>
+              <a href="#home" class="">About us</a>
+              <a href="#home" class="">Contact</a>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="social-link">
+              <a href=""><i class="lab la-facebook-f"></i></a>
+              <a href=""><i class="lab la-twitter"></i></a>
+              <a href=""><i class="las la-paper-plane"></i></a>
+              <a href=""><i class="lab la-instagram"></i></a>
+            </div>
+
+          </div>
+
+
+        </footer>
+        <!-- footer -->
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Bootstrap 5.3.2 -->
+  <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="assets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- JS file -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/customize.js"></script>
+</body>
+
+</html>

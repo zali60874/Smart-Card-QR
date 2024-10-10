@@ -1,0 +1,443 @@
+:root {
+    --color-light: #E9F6FF;
+    --color-navy: #000b45;
+    --color-blue: #3652AD;
+    --color-blue-light: #cfdaff;
+    --color-orange: #FE7A36;
+    --color-grey: #f4f4f4;
+    --color-dark-grey: #a9a9a9;
+
+    --font-Inter: 'Inter', sans-serif;
+    --font-size-12: 12px;
+    --font-size-13: 13px;
+    --font-size-14: 14px;
+    --font-size-15: 15px;
+    --font-size-16: 16px;
+    --font-size-17: 17px;
+    --font-size-18: 18px;
+    --font-size-19: 19px;
+    --font-size-20: 20px;
+    --font-size-25: 25px;
+    --font-size-30: 30px;
+    --font-size-40: 40px;
+    --font-size-45: 45px;
+}
+
+section.card-section {
+    height: 92vh;
+}
+.sidebar {
+    background-color: var(--color-lightest-grey);
+
+}
+.sidebar .nav {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: -webkit-fill-available;
+    background-color: var(--color-light-grey);
+}
+.sidebar .nav .nav-link {
+    width: 100%;
+    height: 80px;
+    border-radius: 0;
+    color: var(--color-darkest-grey);
+    background-color: var(--color-light-grey);
+}
+.sidebar .nav .nav-link.active {
+    background-color: var(--color-lightest-grey);
+    color: var(--color-navy);
+}
+.sidebar .nav .nav-link i {
+    font-size: var(--font-size-25);
+}
+.sidebar .tab-content {
+    width: 80%;
+}
+.sidebar .tab-content .tab-pane {
+    padding: 10px;
+}
+.sidebar .tab-content .tab-pane .tab-heading {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.sidebar .tab-content .tab-pane .tab-heading h5 {
+    color: var(--color-navy);
+}
+.sidebar .tab-content .tab-pane .tab-heading p {
+    font-size: var(--font-size-12);
+}
+section .card-side-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+section .card-side-section .card-side .card {
+    width: 600px;
+    height: 350px;
+}
+
+/* card side positions */
+.card-side .BackSide .card-body {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+}
+.card-section .position-code {
+    margin: 0 25px 0 25px;
+}
+.card-section .position-code .col-4 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.card-section .position-code .col-4 button {
+
+}
+
+.card-section .position-code .col-4 button i {
+    font-size: var(--font-size-18);
+}
+
+.BackSide .card-body  {
+    height: 100%;
+}
+.BackSide .card-body  .col-4.active {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+.resizable-text {
+    position: absolute;
+    background: transparent;
+    border: none;
+    width: 50%;
+}
+
+.resizable-text:hover {
+    border: 1px solid black;
+}
+
+.close-icon {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    cursor: pointer;
+    color: transparent;
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+.close-icon:hover {
+    background-color: white;
+    color: black;
+}
+
+.color-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.color-list .color-item {
+    content: "";
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border: 0.7px solid darkgray;
+    border-radius: 50%;
+}
+.color-list .color-item:hover {
+    cursor: pointer;
+    border: 1px solid var(--color-navy);
+}
+.color-list .color-item.active {
+    border: 1px solid var(--color-navy);
+}
+
+.light-gray {
+    background-color: #D3D3D3;
+}
+
+.silver {
+    background-color: #C0C0C0;
+}
+
+.lavender {
+    background-color: #E6E6FA;
+}
+
+.light-cyan {
+    background-color: #FFB6C1;
+}
+
+.light-pink {
+    background-color: #FFB6C1;
+}
+
+.light-green {
+    background-color: #90EE90;
+}
+
+.light-yellow {
+    background-color: #FFFFE0;
+}
+
+.light-blue {
+    background-color: #ADD8E6;
+}
+
+.light-coral {
+    background-color: #F08080;
+}
+
+.light-goldenrod-yellow {
+    background-color: #FAFAD2;
+}
+
+.light-sea-green {
+    background-color: #20B2AA;
+}
+
+.light-salmon {
+    background-color: #FFA07A;
+}
+
+.light-sky-blue {
+    background-color: #87CEEB;
+}
+
+.light-slate-gray {
+    background-color: #778899;
+}
+
+.light-steel-blue {
+    background-color: #B0C4DE;
+}
+
+.light-turquoise {
+    background-color: #AFEEEE;
+}
+
+.light-orchid {
+    background-color: #DA70D6;
+}
+
+.light-violet {
+    background-color: #EE82EE;
+}
+
+.light-olive-green {
+    background-color: #BDB76B;
+}
+
+.light-maroon {
+    background-color: #B03060;
+}
+
+.light-slate-blue {
+    background-color: #8470FF;
+}
+
+.light-salmon-pink {
+    background-color: #FF91A4;
+}
+
+.light-khaki {
+    background-color: #F0E68C;
+}
+
+.light-beige {
+    background-color: #F5F5DC;
+}
+
+.light-brown {
+    background-color: #CD853F;
+}
+
+.light-magenta {
+    background-color: #FF00FF;
+}
+
+.light-indigo {
+    background-color: #4B0082;
+}
+
+.light-tan {
+    background-color: #D2B48C;
+}
+
+.light-apricot {
+    background-color: #FDD5B1;
+}
+
+.light-turquoise-blue {
+    background-color: #AFE4DE;
+}
+.template {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.template .template-list {
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+}
+.template .template-list img {
+    width: 50%;
+    padding: 5px;
+    border-radius: 15px;
+}
+.template .template-list img:hover {
+    cursor: pointer;
+}
+
+/*--------------------------------- Responsive Media Quaries -----------------------------*/
+@media only screen and (min-width: 1600px) and (max-width: 1900px) {
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}
+
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    section.card-section {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .sidebar {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .sidebar .tab-content .tab-pane .tab-heading h5 {
+        font-size: var(--font-size-15);
+    }
+    .sidebar .tab-content .tab-pane .tab-heading p {
+        font-size: var(--font-size-11);
+    }
+    .sidebar .nav .nav-link {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+    .sidebar .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    .sidebar .tab-content {
+        width: 100%;
+        padding: 10px 0 20px 0;
+    }
+    .sidebar .tab-content label {
+        font-size: var(--font-size-12);
+        font-weight: 600;
+    }
+
+
+    section .card-side-section .card-side .card {
+        width: 300px;
+        height: 175px;
+    }
+
+    section .card-side-section {
+        width: 100%;
+        padding: 20px 0 60px 0;
+    }
+    .radio-inputs {
+        width: 30%;
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+}
+
+
+
+.editor-nav .list {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px) {
+    .editor-nav .list {
+        text-align: center;
+    }
+    .editor-nav .list .left {
+        text-align: center;
+        display: flex;
+    }
+    section.card-section {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .sidebar {
+        flex-direction: column-reverse;
+    }
+    .sidebar .tab-content .tab-pane .tab-heading h5 {
+        font-size: var(--font-size-15);
+    }
+    .sidebar .tab-content .tab-pane .tab-heading p {
+        font-size: var(--font-size-11);
+    }
+    .sidebar .nav .nav-link {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+    .sidebar .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    .sidebar .tab-content {
+        width: 100%;
+        padding: 10px 0 20px 0;
+    }
+    .sidebar .tab-content label {
+        font-size: var(--font-size-12);
+        font-weight: 600;
+    }
+   
+    section .card-side-section .card-side .card {
+        width: 300px;
+        height: 175px;
+    }
+
+    section .card-side-section {
+        padding: 20px 0 20px 0;
+    }
+    .radio-inputs {
+        width: 80%;
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .CodeRow #CardCode {
+        width: 100%;
+    }
+}
+
+/* Small Device = 320px */
+@media only screen and (max-width: 479px) {
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Woofio</title>
+    <script type="text/javascript" src="assets/lib/qr-code-styling/qr.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            @page {
+                margin-left: 0.8in;
+                margin-right: 0.8in;
+                margin-top: 1.2in;
+                margin-bottom: 1.2in;
+            }
+            #container, #container * {
+                visibility: visible;
+            }
+            #container {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+        .heading {
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center bg-light border p-2">
+            <div class="col-md-12 d-flex justify-content-between align-items-center">
+                <a href="https://localizadorwoofio.com/admin/order/all" class="heading">Woofio Code Preview</a>
+                <button class="btn btn-primary shadow-none printButton" onclick="printAndDownloadPDF()" disabled>Print & Download PDF</button>
+            </div>
+        </div>
+        <div id="container" class="d-flex flex-wrap">
+        </div>
+    </div>
+
+    <script>
+
+        const codes = [
+            {
+                "id": 2246,
+                "code": "620e963f-dbd4-4628-9136-c1d14e5373f8",
+                "image": null,
+                "size": "50",
+                "status": "inactive",
+                "created_at": "2024-02-28T07:30:21.000000Z",
+                "updated_at": "2024-02-28T07:30:21.000000Z",
+                "Order_Id": 9
+            },
+            {
+                "id": 2247,
+                "code": "82aed627-f207-4f44-89d2-ec82d95c35a7",
+                "image": null,
+                "size": "50",
+                "status": "inactive",
+                "created_at": "2024-02-28T07:30:21.000000Z",
+                "updated_at": "2024-02-28T07:30:21.000000Z",
+                "Order_Id": 9
+            },
+            {
+                "id": 2248,
+                "code": "8db67e9e-52d5-4b64-8abb-8da60ce2b278",
+                "image": null,
+                "size": "50",
+                "status": "inactive",
+                "created_at": "2024-02-28T07:30:21.000000Z",
+                "updated_at": "2024-02-28T07:30:21.000000Z",
+                "Order_Id": 9
+            },
+            {
+                "id": 2249,
+                "code": "a3895569-9b37-4f4d-bceb-4917c793c9a9",
+                "image": null,
+                "size": "50",
+                "status": "inactive",
+                "created_at": "2024-02-28T07:30:21.000000Z",
+                "updated_at": "2024-02-28T07:30:21.000000Z",
+                "Order_Id": 9
+            },
+            {
+                "id": 2250,
+                "code": "5f50949f-a7a1-4fab-9a4c-69e83f3ecb0b",
+                "image": null,
+                "size": "50",
+                "status": "active",
+                "created_at": "2024-02-28T07:30:21.000000Z",
+                "updated_at": "2024-02-28T07:37:29.000000Z",
+                "Order_Id": 9
+            }
+        ];
+        
+        const Container = document.getElementById("container");
+
+        codes.forEach((data, index) => {
+
+            let QR = document.createElement("div");
+            QR.id = 'qr-code-' + index;
+            Container.appendChild(QR);
+
+            const Code = new QRCodeStyling({
+                width: 150,
+                height: 150,
+                data: 'https://localizadorwoofio.com/scan?scan_id=' + data.code,
+                margin: 0,
+                type: "svg",
+                // image: '/woofio_blue.svg',
+            });
+
+            Code.append(QR);
+        });
+
+        /*----------------------------
+            Preloader
+        ------------------------------ */
+        $(window).on("load", function() {
+            $('.printButton').removeAttr('disabled');
+        });
+
+        // Function to print and download PDF
+        function printAndDownloadPDF() {
+            window.print();
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
